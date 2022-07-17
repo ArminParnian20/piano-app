@@ -9,5 +9,5 @@ var notes=[new Audio('./1.mp3'),
            new Audio('./8.mp3'),
            new Audio('./9.mp3')]
 btn.forEach((b,index)=>{
-    b.addEventListener("click",()=>notes[index].play().finally())
+    b.addEventListener("mouseenter",()=>notes[index].play())
 })
