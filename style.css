@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Oswald:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    user-select:none;
+    font-family: 'Fredoka', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+    background:#333;
+}
+html{
+    -webkit-tap-highlight-color: transparent;
+}
+.container{
+    width:350px;
+    height:350px;
+    padding:0.5rem;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    background:#555;
+    border-radius:5px;
+    gap:3px;
+    box-shadow:0 0 10px 5px rgba(255, 255, 255, 0.074);
+}
+.container div{
+    width:100%;
+    height:100%;
+    background:var(--i);
+    cursor: pointer;
+    transition-duration:0.5s;
+}
+.container div:hover{
+    opacity:0.8;
+}
