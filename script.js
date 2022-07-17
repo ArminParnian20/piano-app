@@ -8,9 +8,7 @@ var notes=[new Audio('./1.mp3'),
            new Audio('./7.mp3'),
            new Audio('./8.mp3'),
            new Audio('./9.mp3')]
-notes.map(n=>n.loop=true)
+notes.map(n=>n.loop=false)
 btn.forEach((b,index)=>{
     b.addEventListener("touchstart",()=>notes[index].play())
-    b.addEventListener("touchend",()=>notes[index].pause())
-    b.addEventListener("touchcancel",()=>notes[index].pause())
 })
